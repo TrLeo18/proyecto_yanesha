@@ -137,10 +137,11 @@ h2 {
   color: #0d47a1;
 }
 
-.footer {
-  background: #00695c;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-size: 14px;
-}
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 30px;
+    font-size: 14px;
+  }
