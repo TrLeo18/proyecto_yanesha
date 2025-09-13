@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f3;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background: #00695c;
+  color: white;
+  padding: 20px;
+}
+.header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a.btn {
+  margin: 0;
+}
+
+.app {
+  flex: 1;
+  background: #fff;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.slide { display: none; min-width: 70vh;}
+.slide.active { display: block; }
+
+h2 {
+  color: #00695c;
+  margin-bottom: 20px;
+}
+
+.pairs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.column { width: 45%; }
+
+.block {
+  background: #00b7a1;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+  user-select: none;
+  color: white;
+  font-weight: bold;
+}
+
+.block:hover {
+  background: #007a64;
+}
+
+.block.selected {
+  background: #007a64;
+}
+
+.block.correct {
+  background: #51cf66;
+  pointer-events: none;
+}
+
+.block.incorrect {
+  background: #f28b82;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #00695c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #004d40;
+}
+
+.btn.volver {
+  background: #4c6ef5;
+}
+.btn.volver:hover {
+  background: #364fc7;
+}
+
+.warning {
+  margin-top: 12px;
+  color: red;
+  font-size: 14px;
+}
+
+.warning span {
+  font-weight: bold;
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: underline;
+}
+.warning span:hover {
+  color: #0d47a1;
+}
+
+.footer {
+  background: #00695c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}

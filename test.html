@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test de Yanesha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <h1>Descubre tu nivel de Yanesha</h1>
+      <ul>
+        <li><a href="index.html" class="btn">Inicio</a></li>
+        <li><a href="idioma.html" class="btn">Idioma</a></li>
+        <li><a href="cultura.html" class="btn">Cultura</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="app">
+    <!-- Etapa 1 -->
+    <div class="slide active" id="etapa1">
+      <h2>Etapa 1: Relaciona los saludos</h2>
+      <div class="pairs" id="saludos"></div>
+      <div class="warning" id="warning1"></div>
+      <button class="btn" onclick="nextStage(1)">Continuar</button>
+    </div>
+
+    <!-- Etapa 2 -->
+    <div class="slide" id="etapa2">
+      <h2>Etapa 2: Relaciona los verbos</h2>
+      <div class="pairs" id="verbos"></div>
+      <div class="warning" id="warning2"></div>
+      <button class="btn" onclick="nextStage(2)">Continuar</button>
+    </div>
+
+    <!-- Etapa 3 -->
+    <div class="slide" id="etapa3">
+      <h2>Etapa 3: Completa la frase</h2>
+      <p id="frase"></p>
+      <div class="warning" id="warning3"></div>
+      <button class="btn" onclick="finishQuiz()">Terminar</button>
+    </div>
+
+    <div class="slide" id="resultados">
+      <h2>Resultados</h2>
+      <p id="puntaje"></p>
+      <p id="mensaje"></p>
+      <a href="index.html" class="btn volver">Volver al inicio</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Proyecto Yanesha</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
