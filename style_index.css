@@ -17,18 +17,8 @@ body, h1, h2, p, ul, li {
     color: white;
     padding: 15px 30px;
   }
-
-  header {
-    background: #00695c;
-    color: white;
-    padding: 15px 30px;
-    width: 100%;
-  
-    background-image: url("img/ic2.png");
-    background-repeat: repeat;
-  }
   */
-
+  
   header {
     color: white;
     padding: 15px 30px;
